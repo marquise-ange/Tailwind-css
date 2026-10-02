@@ -4,90 +4,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
     <title>Tailwind Css</title>
 </head>
+
 <body>
-   <!-- PART 2: PROFILE CARD -->
 
-<div class="max-w-sm mx-auto bg-white rounded-2xl shadow-lg p-6 text-center hover:shadow-xl transition-shadow">
+    <!-- PART 2: PROFILE CARD -->
 
-    <div class="size-24 rounded-full mx-auto mb-4 ring-4 ring-slate-100 bg-slate-200 flex items-center justify-center">
-        <span class="text-xl font-semibold text-slate-700">
-            <img src="images/image1.jpeg" alt="Profile Picture" class="size-24 rounded-full object-cover object-center mx-auto ring-4 ring-slate-100">
-        </span>
+    <div class="max-w-sm mx-auto bg-white rounded-2xl shadow-lg p-6 text-center hover:shadow-xl transition-shadow">
+
+        <div class="size-24 rounded-full mx-auto mb-4 ring-4 ring-slate-100 bg-slate-200 flex items-center justify-center">
+            <img src="images/image1.jpeg"
+                 alt="Profile Picture"
+                 class="size-24 rounded-full object-cover object-center mx-auto">
+        </div>
+
+        <h2 class="text-xl font-semibold text-slate-800">
+            Marquise Ange
+        </h2>
+
+        <p class="text-sm text-slate-500 mb-4">
+            Information Management Student · Kigali
+        </p>
+
+        <p class="text-slate-600 leading-relaxed mb-6">
+            I am learning frontend development and building
+            practical web projects with HTML, CSS, JavaScript
+            and Tailwind CSS.
+        </p>
+
+        <div class="mb-6">
+            <span class="inline-block text-xs px-2 py-1 rounded-full bg-slate-100 text-slate-700">
+                HTML
+            </span>
+
+            <span class="inline-block text-xs px-2 py-1 rounded-full bg-slate-100 text-slate-700">
+                CSS
+            </span>
+        </div>
+
+        <a href="#"
+           class="inline-block bg-slate-800 text-white font-medium px-5 py-2 rounded-lg
+           hover:bg-slate-300 transition-colors
+           focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-400">
+            Contact me
+        </a>
+
     </div>
 
-    <h2 class="text-xl font-semibold text-slate-800">
-        Marquise Ange
-    </h2>
 
-    <p class="text-sm text-slate-500 mb-4">
-        Information Management Student · Kigali
-    </p>
+    <!-- PART 3: NOTICE -->
 
-
-    <p class="text-slate-600 leading-relaxed mb-6">
-        I am learning frontend development and building
-        practical web projects with HTML, CSS, JavaScript
-        and Tailwind CSS.
-    </p>
-
-
-    <div class="mb-6">
-        <span class="inline-block text-xs px-2 py-1 rounded-full bg-slate-100 text-slate-700">
-            HTML
-        </span>
-
-        <span class="inline-block text-xs px-2 py-1 rounded-full bg-slate-100 text-slate-700">
-            CSS
-        </span>
+    <div class="bg-amber-100 text-amber-800 py-4 px-6 border-l-4 border-amber-500 rounded-lg font-medium mt-8">
+        This is an important notice.
     </div>
 
-    <a href="#"
-        class="inline-block bg-slate-800 text-white font-medium px-5 py-2 rounded-lg
-        hover:bg-slate-300 transition-colors
-        focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-400">
-        Contact me
-    </a>
 
-</div>
+    <!-- PART 4: PRICING BOX -->
 
-<!-- PART 3: NOTICE -->
+    <div class="max-w-xs mx-auto mt-8 bg-white rounded-2xl border border-slate-200 p-6 shadow-lg">
 
-<div class="bg-amber-100 text-amber-800 py-4 px-6 border-l-4 border-amber-500 rounded-lg font-medium mt-8">
-    This is an important notice.
-</div>
- 
-<!-- PART 4: PRICING BOX -->
+        <!-- Plan Name -->
+        <h2 class="text-xl font-semibold text-slate-800">
+            Starter Plan
+        </h2>
 
-<div class="max-w-xs mx-auto mt-8 bg-white rounded-2xl border border-slate-200 p-6 shadow-lg">
+        <!-- Price -->
+        <p class="mt-4 text-4xl font-bold text-slate-900">
+            $9.99
+        </p>
 
-    <!-- Plan Name -->
-    <h2 class="text-xl font-semibold text-slate-800">
-        Starter Plan
-    </h2>
+        <!-- Features -->
+        <ul class="mt-6 space-y-2 text-sm text-slate-600">
+            <li>5 Projects</li>
+            <li>Basic Support</li>
+            <li>10 GB Storage</li>
+            <li>Community Access</li>
+        </ul>
 
-    <!-- Price -->
-    <p class="mt-4 text-4xl font-bold text-slate-900">
-        $9.99
-    </p>
+        <button
+            class="mt-6 w-full bg-slate-800 text-white font-medium py-3 rounded-lg hover:bg-slate-300 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-400">
+            Choose Plan
+        </button>
 
-    <!-- Features -->
-    <ul class="mt-6 space-y-2 text-sm text-slate-600">
-        <li>5 Projects</li>
-        <li>Basic Support</li>
-        <li>10 GB Storage</li>
-        <li>Community Access</li>
-    </ul>
+    </div>
 
-
-    <button
-        class="mt-6 w-full bg-slate-800 text-white font-medium py-3 rounded-lg hover:bg-slate-300 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-400">
-        Choose Plan
-    </button>
-
-</div>
 </body>
-</html> 
-
+</html>
